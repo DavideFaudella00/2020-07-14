@@ -9,14 +9,15 @@ public class Match {
 	Integer teamHomeFormation;
 	Integer teamAwayFormation;
 	Integer resultOfTeamHome;
-	
+
 	String teamHomeNAME;
 	String teamAwayNAME;
 
 	LocalDateTime date;
-	
+
 	public Match(Integer matchID, Integer teamHomeID, Integer teamAwayID, Integer teamHomeFormation,
-			Integer teamAwayFormation, Integer resultOfTeamHome, LocalDateTime date, String teamHomeNAME, String teamAwayNAME) {
+			Integer teamAwayFormation, Integer resultOfTeamHome, LocalDateTime date, String teamHomeNAME,
+			String teamAwayNAME) {
 		super();
 		this.matchID = matchID;
 		this.teamHomeID = teamHomeID;
@@ -28,46 +29,59 @@ public class Match {
 		this.teamAwayNAME = teamAwayNAME;
 		this.date = date;
 	}
-	
+
 	public Integer getMatchID() {
 		return matchID;
 	}
+
 	public void setMatchID(Integer matchID) {
 		this.matchID = matchID;
 	}
+
 	public Integer getTeamHomeID() {
 		return teamHomeID;
 	}
+
 	public void setTeamHomeID(Integer teamHomeID) {
 		this.teamHomeID = teamHomeID;
 	}
+
 	public Integer getTeamAwayID() {
 		return teamAwayID;
 	}
+
 	public void setTeamAwayID(Integer teamAwayID) {
 		this.teamAwayID = teamAwayID;
 	}
+
 	public Integer getTeamHomeFormation() {
 		return teamHomeFormation;
 	}
+
 	public void setTeamHomeFormation(Integer teamHomeFormation) {
 		this.teamHomeFormation = teamHomeFormation;
 	}
+
 	public Integer getTeamAwayFormation() {
 		return teamAwayFormation;
 	}
+
 	public void setTeamAwayFormation(Integer teamAwayFormation) {
 		this.teamAwayFormation = teamAwayFormation;
 	}
+
 	public Integer getReaultOfTeamHome() {
 		return resultOfTeamHome;
 	}
+
 	public void setReaultOfTeamHome(Integer resultOfTeamHome) {
 		this.resultOfTeamHome = resultOfTeamHome;
 	}
+
 	public LocalDateTime getDate() {
 		return date;
 	}
+
 	public void setDate(LocalDateTime date) {
 		this.date = date;
 	}
@@ -125,5 +139,5 @@ public class Match {
 			return false;
 		return true;
 	}
-	
+
 }

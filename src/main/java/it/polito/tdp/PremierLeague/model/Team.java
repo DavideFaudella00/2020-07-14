@@ -1,29 +1,65 @@
 package it.polito.tdp.PremierLeague.model;
 
 public class Team {
-	Integer teamID;
-	String name;
+	private Integer teamID;
+	private String name;
+	private int punti;
+	private int reporter;
 
 	public Team(Integer teamID, String name) {
-		super();
+		this.punti = 0;
 		this.teamID = teamID;
 		this.name = name;
+		reporter = 0;
 	}
-	
+
+	public int getReporter() {
+		return reporter;
+	}
+
+	public void setReporter(int reporter) {
+		this.reporter = reporter;
+	}
+
+	public int getPunti() {
+		return punti;
+	}
+
+	public void setPunti(int punti) {
+		this.punti = punti;
+	}
+
 	public Integer getTeamID() {
 		return teamID;
 	}
+
 	public void setTeamID(Integer teamID) {
 		this.teamID = teamID;
 	}
+
 	public String getName() {
 		return name;
 	}
+
 	public void setName(String name) {
 		this.name = name;
 	}
-	
-	
+
+	public void vinto() {
+		punti += 3;
+	}
+
+	public void pareggio() {
+		punti++;
+	}
+
+	public void add() {
+		reporter++;
+	}
+
+	public void remove() {
+		reporter--;
+	}
 
 	@Override
 	public String toString() {
@@ -54,5 +90,5 @@ public class Team {
 			return false;
 		return true;
 	}
-	
+
 }
